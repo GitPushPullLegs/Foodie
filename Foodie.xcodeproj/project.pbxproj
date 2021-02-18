@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8481797725DE17F10041DE27 /* USDA in Frameworks */ = {isa = PBXBuildFile; productRef = 8481797625DE17F10041DE27 /* USDA */; };
 		84EE29A125DE0002005AB0C8 /* FoodieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29A025DE0002005AB0C8 /* FoodieApp.swift */; };
 		84EE29A325DE0002005AB0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29A225DE0002005AB0C8 /* ContentView.swift */; };
 		84EE29A525DE0003005AB0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE29A425DE0003005AB0C8 /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		84EE29B325DE0003005AB0C8 /* FoodieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29B225DE0003005AB0C8 /* FoodieTests.swift */; };
 		84EE29BE25DE0003005AB0C8 /* FoodieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29BD25DE0003005AB0C8 /* FoodieUITests.swift */; };
 		84EE29CF25DE0151005AB0C8 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29CE25DE0151005AB0C8 /* Private.swift */; };
-		84EE29D525DE0271005AB0C8 /* USDAController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29D425DE0271005AB0C8 /* USDAController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		84EE29BD25DE0003005AB0C8 /* FoodieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieUITests.swift; sourceTree = "<group>"; };
 		84EE29BF25DE0003005AB0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84EE29CE25DE0151005AB0C8 /* Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
-		84EE29D425DE0271005AB0C8 /* USDAController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDAController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8481797725DE17F10041DE27 /* USDA in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,6 @@
 				84EE29A025DE0002005AB0C8 /* FoodieApp.swift */,
 				84EE29A225DE0002005AB0C8 /* ContentView.swift */,
 				84EE29CE25DE0151005AB0C8 /* Private.swift */,
-				84EE29D325DE0265005AB0C8 /* USDAController */,
 				84EE29A425DE0003005AB0C8 /* Assets.xcassets */,
 				84EE29A925DE0003005AB0C8 /* Info.plist */,
 				84EE29A625DE0003005AB0C8 /* Preview Content */,
@@ -136,14 +135,6 @@
 			path = FoodieUITests;
 			sourceTree = "<group>";
 		};
-		84EE29D325DE0265005AB0C8 /* USDAController */ = {
-			isa = PBXGroup;
-			children = (
-				84EE29D425DE0271005AB0C8 /* USDAController.swift */,
-			);
-			path = USDAController;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,6 +151,9 @@
 			dependencies = (
 			);
 			name = Foodie;
+			packageProductDependencies = (
+				8481797625DE17F10041DE27 /* USDA */,
+			);
 			productName = Foodie;
 			productReference = 84EE299D25DE0002005AB0C8 /* Foodie.app */;
 			productType = "com.apple.product-type.application";
@@ -231,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 84EE299425DE0002005AB0C8;
+			packageReferences = (
+				8481797525DE17F10041DE27 /* XCRemoteSwiftPackageReference "USDA" */,
+			);
 			productRefGroup = 84EE299E25DE0002005AB0C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -273,7 +270,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EE29D525DE0271005AB0C8 /* USDAController.swift in Sources */,
 				84EE29A325DE0002005AB0C8 /* ContentView.swift in Sources */,
 				84EE29A125DE0002005AB0C8 /* FoodieApp.swift in Sources */,
 				84EE29CF25DE0151005AB0C8 /* Private.swift in Sources */,
@@ -596,6 +592,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8481797525DE17F10041DE27 /* XCRemoteSwiftPackageReference "USDA" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GitPushPullLegs/USDA.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8481797625DE17F10041DE27 /* USDA */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8481797525DE17F10041DE27 /* XCRemoteSwiftPackageReference "USDA" */;
+			productName = USDA;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84EE299525DE0002005AB0C8 /* Project object */;
 }
