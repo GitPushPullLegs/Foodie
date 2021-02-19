@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8458A3B425DF578200B47B7F /* FoodSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458A3B325DF578200B47B7F /* FoodSearchView.swift */; };
+		8458A3BA25DF5A0400B47B7F /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458A3B925DF5A0400B47B7F /* Food.swift */; };
 		8481797725DE17F10041DE27 /* USDA in Frameworks */ = {isa = PBXBuildFile; productRef = 8481797625DE17F10041DE27 /* USDA */; };
 		84EE29A125DE0002005AB0C8 /* FoodieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29A025DE0002005AB0C8 /* FoodieApp.swift */; };
 		84EE29A325DE0002005AB0C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE29A225DE0002005AB0C8 /* ContentView.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8458A3B325DF578200B47B7F /* FoodSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchView.swift; sourceTree = "<group>"; };
+		8458A3B925DF5A0400B47B7F /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		84EE299D25DE0002005AB0C8 /* Foodie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EE29A025DE0002005AB0C8 /* FoodieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodieApp.swift; sourceTree = "<group>"; };
 		84EE29A225DE0002005AB0C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8458A3B825DF59F300B47B7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8458A3B925DF5A0400B47B7F /* Food.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		84EE299425DE0002005AB0C8 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,8 @@
 			children = (
 				84EE29A025DE0002005AB0C8 /* FoodieApp.swift */,
 				84EE29A225DE0002005AB0C8 /* ContentView.swift */,
+				8458A3B325DF578200B47B7F /* FoodSearchView.swift */,
+				8458A3B825DF59F300B47B7F /* Models */,
 				84EE29CE25DE0151005AB0C8 /* Private.swift */,
 				84EE29A425DE0003005AB0C8 /* Assets.xcassets */,
 				84EE29A925DE0003005AB0C8 /* Info.plist */,
@@ -270,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8458A3B425DF578200B47B7F /* FoodSearchView.swift in Sources */,
 				84EE29A325DE0002005AB0C8 /* ContentView.swift in Sources */,
+				8458A3BA25DF5A0400B47B7F /* Food.swift in Sources */,
 				84EE29A125DE0002005AB0C8 /* FoodieApp.swift in Sources */,
 				84EE29CF25DE0151005AB0C8 /* Private.swift in Sources */,
 			);
